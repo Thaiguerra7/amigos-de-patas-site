@@ -1,0 +1,30 @@
+{
+  "name": "ong-amigos-de-patas-spa",
+  "version": "1.0.0",
+  "description": "Single Page Application for ONG Amigos de Patas",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.0",
+    "vue-router": "^4.0.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "keywords": [
+    "SPA",
+    "ONG",
+    "Cadastro",
+    "JavaScript",
+    "Vue"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}

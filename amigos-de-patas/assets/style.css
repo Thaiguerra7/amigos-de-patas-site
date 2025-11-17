@@ -1,0 +1,201 @@
+
+/* ======== VARIÁVEIS DE COR E FONTE ======== */
+:root {
+    --azul-vibrante: #0078ff;
+    --verde-claro: #00ff9d;
+    --turquesa: #00d4ff;
+    --azul-bebe: #e3f8ff;
+    --verde-escuro: #003b33;
+
+    --cor-primaria: var(--azul-vibrante);
+    --cor-secundaria: var(--verde-claro);
+    --cor-fundo: var(--azul-bebe);
+    --cor-texto: var(--verde-escuro);
+    --cor-destaque: var(--verde-escuro);
+
+    --cinza-claro: #f0f0f0;
+    --sombra: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.8;
+    padding-top: 75px;
+}
+
+/* ======== CABEÇALHO FIXO E COMPACTO ======== */
+header {
+    background: linear-gradient(90deg, var(--verde-claro), var(--azul-vibrante));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.5rem;
+    box-shadow: var(--sombra);
+    border-radius: 0 0 15px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-texto);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+    border-radius: 10px;
+    padding: 0.3rem 0.8rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--turquesa);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ======== SEÇÃO HERO (FUNDO COM DEGRADÊ) ======== */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(180deg, var(--verde-claro), var(--turquesa), var(--azul-vibrante));
+    color: #fff;
+    border-radius: 0 0 40px 40px;
+    box-shadow: var(--sombra);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.hero img {
+    margin-top: 2rem;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+}
+
+/* ======== BOTÕES ======== */
+.cta-button, .btn {
+    background: var(--azul-vibrante);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover, .btn:hover {
+    transform: scale(1.05);
+    background: var(--turquesa);
+}
+
+/* ======== SEÇÕES GERAIS ======== */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--cor-destaque);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ======== CARDS ======== */
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--sombra);
+    margin: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ======== FORMULÁRIO ======== */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: 2px solid var(--cor-secundaria);
+    background-color: #fff;
+    color: var(--cor-texto);
+    font-size: 1rem;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--azul-vibrante);
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    background: linear-gradient(90deg, var(--azul-vibrante), var(--turquesa));
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 40px 40px 0 0;
+    box-shadow: var(--sombra);
+}
+
+footer p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
